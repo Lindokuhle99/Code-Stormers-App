@@ -1,0 +1,29 @@
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f4fb;--card:#fff;--ink:#1d1633;--mut:#6b6485;--pri:#6d28d9;--ok:#15803d;--bad:#b91c1c;--warn:#b45309;--line:#e3deef}
+@media (prefers-color-scheme:dark){:root{--bg:#15101f;--card:#211a31;--ink:#f1ecfb;--mut:#a79fc0;--pri:#a78bfa;--ok:#4ade80;--bad:#f87171;--warn:#fbbf24;--line:#35294d}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0}h2{font-size:17px;margin:20px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1 1 120px}
+input,select,button{font:inherit;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+button{background:var(--pri);color:#fff;border:0;font-weight:600;cursor:pointer}
+button.ghost{background:transparent;color:var(--pri);border:1px solid var(--pri)}
+button.danger{background:transparent;color:var(--bad);border:1px solid var(--bad)}
+button.sm{padding:3px 10px;font-size:12px;width:auto;margin-top:4px}
+label{font-size:13px;color:var(--mut);display:block;margin:8px 0 4px}
+input.cb{width:auto;vertical-align:middle}
+.tabs{display:flex;gap:6px;margin:12px 0}.tabs button{flex:1;background:transparent;color:var(--ink);border:1px solid var(--line)}
+.tabs button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.big{font-size:26px;font-weight:700}.mut{color:var(--mut);font-size:13px}
+.in{color:var(--ok)}.out{color:var(--bad)}
+.item{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}
+.flag{display:inline-block;background:var(--warn);color:#fff;border-radius:6px;padding:0 6px;font-size:12px;margin-left:6px}
+.err{color:var(--bad);font-size:14px;min-height:20px}
+.top{display:flex;justify-content:space-between;align-items:center}.top button{width:auto}
+.seg{display:flex;gap:6px;margin-bottom:8px}.seg button{padding:6px;font-size:13px}
+.gap{height:8px}
+a{color:var(--pri);word-break:break-all}
+@media print{.noprint{display:none}body{background:#fff;color:#000}}

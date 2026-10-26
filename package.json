@@ -1,0 +1,10 @@
+{
+  "name": "sisonke",
+  "version": "1.0.0",
+  "description": "Sisonke - secure bookkeeping, quotes and profit tracking for young South African entrepreneurs",
+  "main": "index.js",
+  "scripts": { "start": "node index.js" },
+  "engines": { "node": ">=16" },
+  "license": "UNLICENSED",
+  "private": true
+}
